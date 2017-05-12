@@ -1,0 +1,33 @@
+Clase ElDomadorBot
+      Responsable: 
+	     - Interacción con los servidores de Telegram
+		 - Según las órdenes recibidas crea y ejecuta diversas clases.
+		 - Creación de la clase ElDomadorBotFactory para la creación de las demás clases necesarias.
+		 - Análisis las opciones de la línea de comando
+      
+Clase ElDomadorBotFactory
+		Responsable:
+			- Creación de las distintas clases que se necesitan según las órdenes recibidas por ElDomadorBot
+
+Clase ElDomadorBotTorrent	  
+		Responsable:
+			- Interacción con el torrent
+
+Clase EldomadorConf
+		Responsable:
+			- Lectura y grabación del archivo de configuración.	
+			
+			
+Orden de búsqueda de archivo de configuración:
+1.- Parámetro
+2.- Variable de entorno (NombreDelBot/Programa más HOME).
+3.- HOME
+	Orden de búsqueda 
+	3.1.- Windows
+		3.1.1.- %LOCALAPPDATA%\telegrambot\<nombre del bot>\<nombre del bot>-config.yaml - Por usuario
+		3.1.2.- %PROGRAMDATA%\telegrambot\<nombre del bot>\<nombre del bot>-config.yaml  - General
+	3.2.- Linux
+		3.2.1.- ~/.<nombre del bot>\<nombre del bot>-config.yaml
+		3.2.2.- ~/.<nombre del bot>-config.yaml
+		3.2.3.- /etc/<nombre del bot>/<nombre del bot>-config.yaml
+		3.2.4.- /etc/<nombre del bot>-config.yaml

@@ -1,0 +1,13 @@
+General:
+  proxy: http://openfirevc.sis.ad.bia.itau:9128
+telegram:
+    token: 366425107:AAFtJ-ufw7XDzTcNN2QoJvLC-aE5wb4on18
+
+PluginTransmission:
+    host: laminipc
+    port: 9091
+    username: transmission
+    password: transmission
+
+PluginSorpresaMaster:
+    proxy: http://openfirevc.sis.ad.bia.itau:9128
